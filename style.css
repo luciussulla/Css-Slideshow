@@ -63,11 +63,30 @@
   text-shadow: 6px 3px 2px rgba(0,0,0,0.4);
   cursor: pointer; 
   animation: buttonAnim 2.5s linear; 
-  transition: transform 1s ease;
+  overflow: hidden; 
+  transition: all 1s ease;
 }
 
 .banner button:hover {
   transform: perspective(500px) rotateY(15deg);
+  text-shadow: 3px 6px 2px rgba(0,0,0,0.4);
+  background: linear-gradient(to right,#c0120c, #440402); 
+}
+
+.banner button::before {
+  content: ''; 
+  width: 100%; 
+  height: 100%; 
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0; 
+  left: -100%; 
+  transform: skewX(-30deg);
+  transition: left 2s ease; 
+}
+
+.banner button:hover::before {
+  left: 100%; 
 }
 
 @keyframes buttonAnim {
