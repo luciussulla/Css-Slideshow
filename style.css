@@ -20,7 +20,7 @@
   transform: translateX(-50%);  
   text-align: center;
   overflow: hidden; 
-  border: 1px solid red; 
+  
   /* HIDE FOR STYLING PURPOSES */ 
   /* display: none;  */
 }
