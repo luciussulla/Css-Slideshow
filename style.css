@@ -193,3 +193,33 @@
   border-bottom: 1px solid #fff; 
 }
 
+@media (max-width: 1000px) {
+  .banner h1 {
+    font-size: 80px; 
+  }
+
+  .banner button {
+    width: 180px; 
+    padding: 7px; 
+    font-size: 20px; 
+  }
+
+}
+
+@media(max-width: 650px) {
+  .banner h1 {
+    font-size: 40px; 
+  }
+
+  .content {
+    width: 300px; 
+  }
+  .content h3 {
+    font-size: 30px; 
+  }
+  .content p {
+    font-size: 15px; 
+  }
+
+}
+
